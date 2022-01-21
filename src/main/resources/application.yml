@@ -1,0 +1,15 @@
+server:
+  port: 9001
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    service-url:
+      defaultZone: http://10.10.1.1:9001/eureka
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
